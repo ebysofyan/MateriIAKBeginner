@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorRandom"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/img_iak"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/iak" />
+
+    <ImageView
+        android:id="@+id/img_chevron"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_chevron_right" />
+
+    <TextView
+        android:id="@+id/tv_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_chevron"
+        android:singleLine="true"
+        android:text="0C"
+        android:textColor="@android:color/white"
+        android:textSize="55dp" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_degree"
+        android:layout_toRightOf="@id/img_iak"
+        android:singleLine="true"
+        android:text="Matarammmmmmmmmm"
+        android:textColor="@android:color/white"
+        android:textSize="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_city"
+        android:layout_toLeftOf="@id/tv_degree"
+        android:layout_toRightOf="@id/img_iak"
+        android:text="Mendung"
+        android:textColor="@android:color/white"
+        android:textSize="28dp" />
+
+</RelativeLayout>

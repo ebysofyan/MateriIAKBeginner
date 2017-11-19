@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/acc_tv_angka_pertama"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Masukkan Angka Pertama"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/acc_tv_angka_kedua"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Masukkan Angka Kedua"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/acc_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/acc_rb_penjumlahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Penjumlahan" />
+
+        <RadioButton
+            android:id="@+id/acc_rb_pengurangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengurangan" />
+
+        <RadioButton
+            android:id="@+id/acc_rb_perkalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perkalian" />
+
+        <RadioButton
+            android:id="@+id/acc_rb_pembagian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembagian" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/acc_btn_hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="8dp"
+        android:text="Hitung" />
+
+    <TextView
+        android:id="@+id/acc_tv_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="55dp" />
+
+</LinearLayout>
