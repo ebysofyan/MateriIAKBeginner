@@ -24,6 +24,7 @@
         <activity android:name=".KalculatorSederhanaActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".KalkulatorLengkapSedikitActivity" />
+        <activity android:name=".KirimEmailActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnKalkulatorSederhana;
     Button btnKalkulatorLengkapDikit;
+    Button btnKirimEmail;
     TextView tvSelamatdatang;
 
     @Override
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnKalkulatorSederhana = findViewById(R.id.btn_kalkulator_sederhana);
         btnKalkulatorLengkapDikit = findViewById(R.id.btn_kalkulator_lengkap_sedikit);
+        btnKalkulatorLengkapDikit = findViewById(R.id.btn_kalkulator_lengkap_sedikit);
+        btnKirimEmail = findViewById(R.id.btn_kirim_email);
         tvSelamatdatang = findViewById(R.id.tv_selamat_datang);
 
         btnKalkulatorSederhana.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 bukaKalkulatorLengkapSedikit();
+            }
+        });
+
+        btnKirimEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bukaKirimEmail();
             }
         });
 
@@ -68,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
 
     void bukaKalkulatorLengkapSedikit() {
         Intent intent = new Intent(this, KalkulatorLengkapSedikitActivity.class);
+        startActivity(intent);
+    }
+
+    void bukaKirimEmail() {
+        Intent intent = new Intent(this, KirimEmailActivity.class);
         startActivity(intent);
     }
 
